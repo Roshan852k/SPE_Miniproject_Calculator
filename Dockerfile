@@ -12,8 +12,5 @@ COPY calculator.py /app/calculator.py
 # Install any required Python packages (if needed)
 # RUN pip3 install <package-name>
 
-#Ensure script have execute permission
-RUN chmod+x /app/calculator.py
-
 # Set the default command to execute calculator.py
 CMD ["python3", "/app/calculator.py"]
