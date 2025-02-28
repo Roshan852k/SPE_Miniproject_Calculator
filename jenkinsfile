@@ -5,7 +5,7 @@ pipeline {
    }
     environment {
         DOCKER_IMAGE_NAME = 'calculator'
-        GITHUB_REPO_URL = 'https://github.com/Roshan852k/calculator.git'
+        GITHUB_REPO_URL = 'https://github.com/Roshan852k/SPE_Miniproject_Calculator.git'
     }
 
     stages {
@@ -30,7 +30,7 @@ pipeline {
         stage('Test Code') {
             steps {
                 script {
-                    sh 'python3 catest.py'
+                    sh 'python3 calculator_test.py'
                 }
             }
         }
