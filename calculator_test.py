@@ -10,6 +10,7 @@ class TestScientificCalculator(unittest.TestCase):
         self.assertEqual(math.factorial(0), 1)
         self.assertEqual(math.factorial(1), 1)
         self.assertEqual(math.factorial(5), 120)
+        self.assertEqual(math.factorial(10), 3628800)
     
     def test_square_root(self):
         self.assertEqual(math.sqrt(0), 0)
