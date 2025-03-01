@@ -24,5 +24,9 @@
         name: docker
         state: started
 
+    - name: Stop existing container (if running)
+      command: docker rm -f calculator
+      ignore_errors: yes
+
     - name: Running container
       shell: docker run -it -d --name calculator iiitbroshan/calculator /bin/bash
