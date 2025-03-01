@@ -4,6 +4,11 @@
   remote_user: roshan
   become: false
   tasks:
+     - name: Install Python Docker SDK
+      pip :
+      	name: docker 
+      	executable: pip3
+       
     - name: Pull Docker Image
       docker_image:
         name: "iiitbroshan/calculator"
