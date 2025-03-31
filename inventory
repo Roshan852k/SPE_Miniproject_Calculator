@@ -1,2 +1,3 @@
-localhost ansible_user=roshan ansible_ssh_pass=9180@7985 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+[myhosts]
+localhost ansible_connection=local ansible_python_interpreter=/usr/bin/python3
 
